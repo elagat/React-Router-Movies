@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const MovieCard = props => {
+  const [movie, setMovie] = useState();
+  const { title, director, metascore, stars } = props;
+  console.log("props", props);
+
   return (
     <div className="movie-card">
       <h2>{title}</h2>
